@@ -1,0 +1,823 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	font-family: "微软雅黑";
+}
+
+/*顶部*/
+.head{
+	width:100%;
+	height:180px;
+	background-color: #f3f5f7;
+}
+/*LOGO-登陆注册*/
+ul,li{
+	display:inline-block;
+	cursor: pointer;
+}
+a{
+	text-decoration:none;
+}
+.head .logo{
+	width:70%;
+	height:200px;
+	margin:0 auto;
+}
+.head .logo .headLogin{
+	width:100%;
+	height:48px;
+	line-height: 48px;
+	font-size:12px;
+	color:#666;
+	border-bottom: 1px solid #ccc;
+}
+.loginLink,.regiLink{
+	cursor:pointer;
+}
+.head .logo .headLogin .left{
+	float:left;
+	width: 300px;
+}
+.head .logo .headLogin .right{
+	float:right;
+	width: 450px;
+}
+.head .logo .headLogin .right>li{
+	float: left;
+	margin-right: 10px;
+	width: 80px;
+	text-align: center;
+}
+.head .logo .headLogin .right img{
+	width:12px;
+	height:12px;
+	margin-bottom: -2px;
+}
+/*LOGO区-搜索*/
+.search{
+	width:100%;
+	height:130px;
+	position:relative;
+}
+.search div{
+	display: inline-block;
+}
+.search .logoPic{
+	width:20%;
+	line-height: 150px;
+	margin-left:20px;
+}
+.search .textBox{
+	position:absolute;
+	left:250px;
+	top:37px;
+	width:50%;
+}
+.search .textBox input{
+	width:400px;
+	height:45px;
+	line-height: 45px;
+	padding-left:10px;
+	border:1px solid #ccc;
+	box-shadow:0 0 0 2px rgba(233,233,233,0.8);
+}
+.search .textBox ul{
+	width: 409px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 0;
+	top: 45px;
+	z-index: 1032;
+}
+.search .textBox ul li{
+	float:left;
+	width: 390px;
+	font-size: 15px;
+	line-height: 15px;
+	padding: 5px 10px;
+}
+.search .textBox ul li:hover{
+	background-color: #ccc;
+}
+.search .textBox ul li a{
+	color: #000;
+}
+.search .button{	
+	position: absolute;
+	left:660px;
+	top:37px;
+	text-align:center;
+}
+.search .button input{
+	width:70px;
+	height:47px;
+	color:#fff;
+	background-color: #000;
+	border:none;
+}
+.search .cartA{
+	width:20%;
+	height:50px;
+	position:absolute;
+	left:750px;
+	top:35px;
+	font-size:13px;	
+	background-color:red;
+	color:#fff;
+}
+.search .cartA .cartLogo{
+	position:absolute;
+	left:20px;
+	top:15px;
+}
+.search .cartA .cartText{
+	position:absolute;
+	left:55px;
+	top:15px;
+}
+.search .cartA .arrow{
+	position:absolute;
+	left:150px;
+	top:15px;
+}
+/*导航区*/
+.nav{
+	width:100%;
+	height:50px;
+	background-color: #000;
+	color:#fff;
+	line-height:49px;
+}
+.nav .navList{
+	width:70%;
+	height: 50px;
+	margin-left: 365px;
+	position: relative;
+	z-index: 9;
+}
+.nav .navList>li{
+	font-size:13px;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+}
+.nav .navList>li:hover{
+	background-color: #666;
+}
+.nav .navList li>a{
+	color: #fff;
+}
+/*banner区*/
+	/*左侧列表*/
+	.banner{
+		width:75%;
+		height:500px;
+		top:-55px;
+		margin:0 auto;
+		position:relative;
+	}
+	.banner .banLeft{
+		width:19%;
+		height:500px;
+		background-color: #f01414;
+		color:#fff;
+		font-size: 13px;
+	}
+	.banner .banLeft .title{
+		width:100%;
+		height:55px;
+		background-color: #c00;
+		position:relative;
+	}
+	.banner .banLeft .title img{
+		width:20px;
+		height:20px;
+		position: absolute;
+		left:20px;
+		top:20px;
+	}
+	.banner .banLeft .title div{
+		position: absolute;
+		left:50px;
+		top:21px;
+	}
+	.banner .banLeft .list{
+		position: relative;
+		width:100%;
+		height:31px;
+		line-height: 31px;
+		cursor: pointer;
+	}
+	.banner .banLeft .list span{
+		display: block;
+		position:absolute;
+		margin-left:15px;
+	}
+
+	.banner .banLeft .list .symb{
+		right:15px;
+	}
+	/*轮播图部分*/
+	.banner .ban .banPic{
+		display:none;
+		background-color: #ddd;
+		width:59%;
+		height:440px;
+		position: absolute;
+		top:60px;
+		left:197px;
+	}
+	.banner .ban .banPic img{
+		width:597px;
+		height:440px;
+	}
+	.banner .ban .activeP{
+		display:block;
+	}
+	/*轮播图的点*/
+	.banner .ban .dots{	
+		position:absolute;
+		top:460px;
+		left:440px;
+	}
+	.banner .ban .dots .dot{
+		display: inline-block;
+		width:10px;
+		height:10px;
+		border-radius:50%;
+		background-color: #666;
+		margin-left:10px;
+		box-shadow:0 0 0 1px #fff inset;
+	}
+	.banner .ban .dots .dot:hover{
+		cursor:pointer;
+	}
+	.banner .ban .dots .activeD{
+		box-shadow:0 0 0 1px #666 inset;
+		background-color: #fff;
+	}
+	/*轮播图的箭头*/
+	.banner .ban .arrow{
+		width:30px;
+		height:40px;
+		position: absolute;
+		top:50%;
+		left:210px;
+	}
+	.banner .ban .arrow .next{
+		width:30px;
+		height:40px;
+		position: absolute;
+		left:auto;
+		margin-top:-40px;
+		right:-540px;
+		background:url(../material/focus-carousel/pre.png) no-repeat center center;
+	}
+	.banner .ban .arrow .prev{
+		width:30px;
+		height:40px;
+		background:url(../material/focus-carousel/pre2.png) no-repeat center center;
+	}
+	.banner .ban .arrow .hove{
+		background-color: #666;
+		filter:alpha(opacity=80);
+		opacity: 0.8;
+	}
+/*右侧列表*/
+	/*右侧列表-上部分*/
+	.banner .banRight{
+		width:22%;
+		height:440px;
+		position: absolute;
+		left:800px;
+		top:60px;
+		background-color: #fff;
+	}
+	.banner .banRight .top{
+		width:100%;
+		height:40%;
+		font-size:12px;
+		border:1px solid #ccc;
+	}
+	.banner .banRight .top div{
+		margin-top:10px;
+		margin-left:5px;
+		color:#333;
+	}
+	.banner .banRight .title .greyColor{
+		margin-left:100px;
+	}
+	/*右侧列表-中部分*/
+	.banner .banRight .middle{
+		width:100%;
+		height:40%;
+		border-left:1px solid #ccc;
+		font-size: 13px;
+		position:relative;
+	}
+	.banner .banRight .middle dl{
+		width:25%;
+		height:33%;
+		border-right:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		position:absolute;
+		text-align:center;
+	}
+	.banner .banRight .middle dl dt{
+		margin-top:10px;
+		
+	}
+	.banner .banRight .middle dl img{
+		width:20px;
+		height:20px;
+	}
+	.banner .banRight .middle .mlist2{
+		left:25%;
+	}
+	.banner .banRight .middle .mlist3{
+		left:50%;
+	}
+	.banner .banRight .middle .mlist4{
+		left:75%;
+	}
+	.banner .banRight .middle .mlist5{
+		top:33%;
+	}
+	.banner .banRight .middle .mlist6{
+		top:33%;
+		left:25%;
+	}
+	.banner .banRight .middle .mlist7{
+		top:33%;
+		left:50%;
+	}
+	.banner .banRight .middle .mlist8{
+		top:33%;
+		left:75%;
+	}
+	.banner .banRight .middle .mlist9{
+		top:66%;
+	}
+	.banner .banRight .middle .mlist10{
+		top:66%;
+		left:25%;
+	}
+	.banner .banRight .middle .mlist11{
+		top:66%;
+		left:50%;
+	}
+	.banner .banRight .middle .mlist12{
+		top:66%;
+		left:75%;
+	}
+
+	/*右侧列表-下部分*/
+	.banner .banRight .bottom{
+		width:100%;
+		height:20%;
+	}
+	.banner .banRight .bottom img{
+		width:101%;
+		height:99%;
+	}
+	.greyColor{
+		color:#999;
+	}
+	.bold{
+		font-weight:bolder;
+	}
+.floo{
+	width:78%;
+	height:2750px;
+	margin:0 auto;
+	position:relative;
+	top:-30px;
+	left:10px;
+}
+.floo .f1{
+	width:100%;
+	height:550px;
+}
+.floo .f2{
+	width:100%;
+	height:550px;
+}
+.floo .f3{
+	width:100%;
+	height:550px;
+}
+.floo .f4{
+	width:100%;
+	height:550px;
+}
+.floo .f5{
+	width:100%;
+	height:550px;
+}
+.floo .title{
+	width:100%;
+	height:50px;
+	border-bottom:1px red solid;
+	position: relative;
+}
+.floo .title div{
+	display:inline-block;
+}
+.floo .title .left {
+	width:200px;
+	height:50px;
+}
+.floo .title .left .dot{
+	width:30px;
+	height:30px;
+	color:#fff;
+	text-align: center;
+	line-height:30px;
+	margin-top:10px;
+	background-color: #000;
+	border-radius:50%;
+}
+.floo .title .right{
+	width:150px;
+	height:50px;
+	font-size:12px;
+	position:absolute;
+	right:0;
+	text-align: center;
+	line-height:50px;
+}
+.floo .title .arrow{
+	width:20px;
+	height:20px;
+	position:absolute;
+	bottom:-13px;
+	right:100px;/*添加动画时此处要变*/
+	background: url(../material/floor-arrow.png) no-repeat;
+}
+.floo .content{
+	width:100%;
+	height:400px;
+	position:relative;
+	left:-15px;
+}
+.floo .content dl{
+	width:17%;
+	height:50%;
+	position:absolute;
+	text-align: center;
+	top:10px;
+	font-size:12px;
+}
+.floo .content dt{
+	margin-top: 20px;
+}
+.floo .content dd{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.floo .content dd span{
+	position:relative;
+	top: 10px;
+}
+.floo .content .list2{
+	left:17%;
+}
+.floo .content .list3{
+	left:34%;
+}
+.floo .content .list4{
+	left:51%;
+}
+.floo .content .list5{
+	left:68%;
+}
+.floo .content .list6{
+	left:85%;
+}
+.floo .content .list7{
+	top:65%;
+}
+.floo .content .list8{
+	top:65%;
+	left:17%;
+}
+.floo .content .list9{
+	top:65%;
+	left:34%;
+}
+.floo .content .list10{
+	top:65%;
+	left:51%;
+}
+.floo .content .list11{
+	top:65%;
+	left:68%;
+}
+.floo .content .list12{
+	top:65%;
+	left:85%;
+}
+/*友情链接区*/
+.friend{
+	width:85%;
+	height:180px;
+	margin:0 auto;
+	border-top:1px #ccc solid;
+	position:relative;
+}
+.friend .list{
+	width:20%;
+	height:180px;
+	margin-top: 50px;
+	position: absolute;
+	margin-left: 20px;
+}
+.friend .list div{
+	font-size: 13px;
+	margin-bottom:15px;
+}
+.friend .b{
+	position: absolute;
+	left:25%;
+}
+.friend .c{
+	left:50%;
+}
+.friend .d{
+	left:75%;
+}
+/*页脚*/
+.foot{
+	width:100%;
+	height:100px;
+	background-color: #f3f5f7;
+	font-size:13px;
+	text-align: center;
+}
+.foot div{
+	padding-top: 20px;
+}
+.foot div span{
+	padding-left: 20px;
+}
+
+/*右侧导航栏*/
+.navRightA{
+	position:fixed;
+	right:0px;
+	top:50%;
+	width:30px;
+	height:157px;
+	background-color: #b7bbbf;
+}
+.navRightA img{
+	width:20px;
+	height:20px;
+}
+.navRightA>div{
+	width:100%;
+	height:30px;
+	line-height: 40px;
+	border-top:1px solid #fff;
+	text-align:center;
+}
+/*右侧导航栏划过后*/
+.navRightB{
+	position:fixed;
+	right:30px;
+	top:50%;
+	width:60px;
+	height:157px;
+	background-color: #b7bbbf;
+	display: none;
+}
+.navRightB div{
+	width:60px;
+	height:30px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #fff;
+	border-top:1px solid #fff;
+	text-align:center;
+}
+.navRightB div span{
+	display: inline-block;
+	margin-top:10px;
+}
+/*左侧导航栏*/
+.navLeft{
+	position:fixed;
+	left:100px;
+	top:12%;
+	width:30px;
+	height:157px;
+	background-color:transparent;
+}
+.navLeft .fn{
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	display:inline-block;
+	border-top:1px solid #ccc;
+}
+.navLeft .fnumber span{
+	color:#999;
+	font-size: 14px;
+}
+.navLeft .title{
+	width:30px;
+	height:157px;
+	position: absolute;
+	top:1px;
+}
+.navLeft .ft{
+	width:30px;
+	height:30px;
+	color:transparent;
+	font-size: 14px;
+	line-height: 30px;
+	display:inline-block;
+}
+.navLeft .fnumber .nlhide{
+	color:#fff;
+}
+.navLeft .nlshow{
+	color:red;
+}
+/*弹出层*/
+/*弹出层遮罩*/
+.layer-mask{
+	display: none;
+	z-index: 99;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+/*弹出层窗体*/
+.layer-pop{
+	display: none;
+	width:350px;
+	height:350px;
+	background-color: #fff;
+
+	z-index: 100;
+	position: fixed;
+	top:0;
+	left: 0;
+	bottom:0;
+	right:0;
+	margin:auto;
+}
+/*弹出层关闭按钮*/
+.layer-close{
+	width:20px;
+	height:20px;
+	font-size: 30px;
+	color:#aaa;
+	float: right;
+	margin-right:20px;
+	margin-top:15px;
+}
+.layer-close:hover{
+	cursor:pointer;
+}
+/*登录*/
+.popTitle{
+	width:350px;
+	height:20px;
+	margin-top: 20px;
+}
+.popRegi:hover,.popLogin:hover{
+	cursor: pointer;
+}
+.popTitle span{
+	font-size: 18px;
+	margin: 20px;
+	padding-bottom: 5px;
+}
+.popTitle .line{
+	border-bottom: 2px solid red;
+}
+.item{
+	width:310px;
+	height:200px;
+	margin:20px;
+}
+.item input{
+	border:1px solid #ccc;
+	border-radius:3px;
+	padding:10px 5px;
+	width:290px;
+	margin-top:10px;
+}
+.item .button{
+	border:none;
+	width:300px;
+	margin:0;
+	color:#fff;
+	background-color: red;
+}
+.item p{
+	display: none;
+	font-size:13px;
+	color:red;
+}
+.item .chos{
+	width:300px;
+	height:20px;
+	font-size: 13px;
+	margin-bottom:20px;
+}
+.item .chos input{
+	width:13px;
+	height:13px;
+}
+.item .chos span{
+	padding-left:5px;
+	color:#666;
+}
+.item .chos .forget{
+	padding-left: 146px;
+}
+.item .pic{
+	width:300px;
+	height:100px;
+}
+.item .pic img{
+	width:50px;
+	height:50px;
+	margin:20px;
+	background-color:grey;
+	border-radius: 50%;
+}
+.item .pic .weibo:hover,.item .pic .weixin:hover,.item .pic .qq:hover{
+	cursor:pointer;
+	background-color:blue;
+}
+/*上方导航栏列表*/
+.topList ul li{
+	width: 73px;
+	height: 14px;
+	padding: 5px 3px;
+}
+.topList ul li:hover{
+	background-color: #eee;
+}
+.topList1,.topList2,.topList3,.topList4{
+	width: 79px;
+	border:1px solid #ccc;
+	position:absolute;
+	top:48px;
+	font-size:12px;
+	color:#666;
+	background-color: #fff;
+	display: none;
+}
+.topList1{
+	right:571px;
+}
+.topList2{
+	right:481px;
+}
+.topList3{
+	right:301px;
+}
+.topList4{
+	right:211px;
+}
+
+/*鼠标划过后列表内容banner区的列表内容*/
+.listContent{
+	width: 700px;
+	height: 440px;
+	font-size: 14px;
+	position: absolute;
+	left: 361px;
+	top: 235px;
+}
+.listContent span{
+	color: #333333;
+}
+.listContent a{
+	color: #fff;
+}
+.listContent .list{
+	position: absolute;
+	width: 700px;
+	height: 440px;
+	margin-bottom: 10px;
+	background-color: #CC0000;
+	display: none;
+}
+.listContent>.list>div{
+	width: 650px;
+	height: 30px;
+	padding: 10px 25px;
+}
